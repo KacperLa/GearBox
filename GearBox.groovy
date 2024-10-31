@@ -184,6 +184,10 @@ ArrayList<CSG> inputSideAssembly = [
                                     drivePins
                                 ];
 
+disk.setName("disk");
+disk.setColor(javafx.scene.paint.Color.CYAN);
+disk2.setColor(javafx.scene.paint.Color.RED);
+
 // ======================================
 ArrayList<CSG> all = [
                         disk,
