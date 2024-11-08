@@ -1,0 +1,92 @@
+{
+  "high hip": {
+    "name": "high hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 990599
+  },
+  "low hip": {
+    "name": "low hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 1041399
+  },
+  "underbust": {
+    "name": "underbust",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 863599
+  },
+  "waist to pubic bone": {
+    "name": "waist to pubic bone",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 152399
+  },
+  "dead shaft radius": {
+    "name": "dead shaft radius",
+    "options": [],
+    "value": 5000
+  },
+  "waist high hip": {
+    "name": "waist high hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 101600
+  },
+  "dead shaft length": {
+    "name": "dead shaft length",
+    "options": [],
+    "value": 5000
+  },
+  "waist to top back": {
+    "name": "waist to top back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 177799
+  },
+  "waist": {
+    "name": "waist",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 762000
+  },
+  "waist to bottom back": {
+    "name": "waist to bottom back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 171450
+  },
+  "number rows or rivets": {
+    "name": "number rows or rivets",
+    "options": [
+      "1",
+      "2"
+    ],
+    "value": 2000
+  },
+  "number of panels": {
+    "name": "number of panels",
+    "options": [
+      "12",
+      "4"
+    ],
+    "value": 8000
+  }
+}
