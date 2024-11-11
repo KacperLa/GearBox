@@ -1,4 +1,10 @@
 
+File servo = ScriptingEngine
+	.fileFromGit(
+		"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",//git repo URL
+		"master",//branch
+		"BowlerStudioVitamins/stl/servo/smallservo.stl"// File from within the Git repo
+	);
 
 ArrayList<CSG> makeGearBox (
     double outerRadius, // Radius of Gear box
@@ -17,9 +23,6 @@ ArrayList<CSG> makeGearBox (
     double E  = eccentricityOffset;   // eccentricity offset
     double Rr = ringPinRadius;        // radius of ring pins
     double N  = numberOfRingPins;     // number of ring pins
-
-    double Dr = drivePinRadius;    // drive pin radius
-    double Nd = numberOfDrivePins;    // number of drive pins
 
     double flangeH = 3;
 
@@ -56,8 +59,22 @@ ArrayList<CSG> makeGearBox (
     deadShaft.setName("deadShaft");
     deadShaft.setColor(javafx.scene.paint.Color.GRAY);
 
+    // Drive Shaft definition
     double inputShaftInnerR = deadShaftOuterR+0.75; // Drive Shaft apatrum radius
     double inputShaftOuterR = smallBearingInnerR-eccentricityOffset; // Drive Shaft outer radius
+
+    // Sholder Bolt definition
+    double sholderBoltHeadR = 7.0/2.0;    // Sholder Bolt head radius  
+    double sholderBoltHeadL = 2.0 + 1.0;  // Sholder Bolt head height + recess
+    double sholderBoltSholderR = 4.05/2.0; // Sholder Bolt radius
+    double sholderBoltSholderL = 20;      // Sholder Bolt height
+    double sholderBoltThreadL = 6;       // Sholder Bolt thread length
+    double sholderBoltThreadR = 2.5/2;    // Hole for M3 Tap
+
+    CSG sholderBolt = new Cylinder(sholderBoltHeadR, sholderBoltHeadL).toCSG();
+    sholderBolt = sholderBolt.union(new Cylinder(sholderBoltSholderR, sholderBoltSholderL).toCSG().movez(sholderBoltHeadL));
+    sholderBolt = sholderBolt.union(new Cylinder(sholderBoltThreadR, sholderBoltThreadL).toCSG().movez(sholderBoltHeadL+sholderBoltSholderL));
+    sholderBolt.setColor(javafx.scene.paint.Color.BLUE);
 
     double EN = E/N;
 
@@ -119,10 +136,10 @@ ArrayList<CSG> makeGearBox (
     CSG drivePinHole = new Cylinder(drivePinHoleRadius, drivePinHoleRadius, diskHeight, 64).toCSG();
     for (int i = 0; i < numberOfDrivePins; i += 1) {
         disk = disk.difference(drivePinHole
-            .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/Nd))
-            .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/Nd))
-            );
-        }
+            .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/numberOfDrivePins))
+            .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/numberOfDrivePins))
+        );
+    }
 
     CSG disk2 = disk
 
@@ -197,28 +214,34 @@ ArrayList<CSG> makeGearBox (
     }
 
     // Drive Pins
-    double statorPinLength = 30;
+    double statorPinLength = 25;
     ArrayList<CSG> drivePins = new ArrayList<CSG>();
-    CSG drivePin = new Cylinder(drivePinHoleRadius, statorPinLength).toCSG();
+    CSG drivePin = new Cylinder(drivePinRadius, statorPinLength).toCSG();
+    drivePin.setColor(javafx.scene.paint.Color.BLUE);
     CSG drivePinHolePressFit = new Cylinder(drivePinRadius+0.1, statorPinLength).toCSG();
+
+    // Holes for drive pins
+    // Half are press fit and half are sholder bolts
     for (int i = 0; i < numberOfDrivePins; i += 1) {
-        drivePins.add(drivePin
-            .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/Nd))
-            .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/Nd))
-            );
-        
-        intputSupport = intputSupport.difference(drivePinHolePressFit
-            .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/Nd))
-            .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/Nd))
-            );
+        if (i % 2 == 0) {
+            drivePins.add(sholderBolt
+                .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/numberOfDrivePins))
+                .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/numberOfDrivePins))
+                );
+        } else {
+            drivePins.add(drivePin
+                .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/numberOfDrivePins))
+                .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/numberOfDrivePins))
+                .movez(4)
+                );
+        }    
+    }
 
-        outputSupport = outputSupport.difference(drivePinHolePressFit
-            .movex(drivePinPitchRadius*Math.cos((2*Math.PI*i)/Nd))
-            .movey(drivePinPitchRadius*Math.sin((2*Math.PI*i)/Nd))
-            .movez(3)
-            );
-        }
-
+    // Subtract each item in drivePins
+    for (int i = 0; i < numberOfDrivePins; i += 1) {
+        intputSupport = intputSupport.difference(drivePins[i]);
+        outputSupport = outputSupport.difference(drivePins[i]);
+    }
 
 
     // Drive shaft
@@ -261,13 +284,16 @@ ArrayList<CSG> makeGearBox (
 
     motorBell = motorBell.movez(-(motorBellH+6));
 
-   
+    outputSupport.setColor(javafx.scene.paint.Color.GREEN);
+    intputSupport.setColor(javafx.scene.paint.Color.GREEN);
+
     return [
             disk,
             disk2,
             //outputPins, 
             ringGear,
             intputSupport,
+            drivePins,
             outputSupport,
             deadShaft.movez(-20),
             driveShaft.movez(3),
@@ -285,9 +311,9 @@ gearBox = makeGearBox( outerRadius         = 32.5,
                        eccentricityOffset  = 0.75, 
                        numberOfRingPins = 10, // 9:1
                        ringPinRadius = 2.5,
-                       drivePinRadius = 2.5,
+                       drivePinRadius = 2,
                        numberOfDrivePins = 6,
-                       drivePinPitchRadius = 19.0
+                       drivePinPitchRadius = 18.5
                     );
 
 // ======================================
