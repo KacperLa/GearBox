@@ -1,10 +1,12 @@
 
-File servo = ScriptingEngine
+File sholderBolt = ScriptingEngine
 	.fileFromGit(
-		"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",//git repo URL
-		"master",//branch
-		"BowlerStudioVitamins/stl/servo/smallservo.stl"// File from within the Git repo
+		"https://github.com/KacperLa/GearBox.git",
+		"main",
+		"sholderBolt.groovy"
 	);
+
+println(sholderBolt.getBoltNom());
 
 ArrayList<CSG> makeGearBox (
     double outerRadius, // Radius of Gear box

@@ -26,3 +26,5 @@ class SholderBolt {
         return Bolt;
     }
 }
+
+return new SholderBolt();
