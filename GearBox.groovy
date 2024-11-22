@@ -165,6 +165,27 @@ ArrayList<CSG> makeGearBox (
         double y = (R*Math.sin(t))-(Rr*Math.sin(t+Math.atan(Math.sin((1-N)*t)/((R/EN)-Math.cos((1-N)*t)))))-(E*Math.sin(N*t));
         points.add(new Vector3d(x, y));
         }
+
+	List<Polygon> polys = Slice.slice(base,new Transform(),0).collect{it.transformed(new Transform().movez(10))}
+	String url = "https://gist.github.com/KacperLa/GearBox.git"
+	String filename="disk.svg"
+	File earCoreFile = ScriptingEngine.fileFromGit(url,
+			filename);
+	SVGExporter svg = new SVGExporter();
+			
+	for( Polygon p: polys){
+		svg.toPolyLine(p);
+		svg.colorTick();
+	}
+
+	//ScriptingEngine.pushCodeToGit(url, "master", filename, svg.make(), "Making Cached SVG "+filename, true)
+	ArrayList<Polygon> list=new ArrayList<Polygon>();
+
+	SVGLoad l=new SVGLoad(earCoreFile.toURI())
+	for(String s:l.getLayers()) {
+		list.addAll(l.getPolygonByLayers().get(s))
+	}
+
        
     double diskHeight = smallBearingH + 1;
     CSG disk = Extrude.points(new Vector3d(0,0, diskHeight),points);
