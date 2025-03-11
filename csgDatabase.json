@@ -1,4 +1,637 @@
 {
+  "Bolt Hole Facet Count": {
+    "name": "Bolt Hole Facet Count",
+    "options": [
+      "40",
+      "10"
+    ],
+    "value": 10000
+  },
+  "joystickCovers Default": {
+    "name": "joystickCovers Default",
+    "options": [
+      "nintendoSwitch"
+    ],
+    "strValue": "nintendoSwitch"
+  },
+  "VexWireless Default": {
+    "name": "VexWireless Default",
+    "options": [
+      "v5_Vexnet"
+    ],
+    "strValue": "v5_Vexnet"
+  },
+  "microMetalMotor Default": {
+    "name": "microMetalMotor Default",
+    "options": [
+      "298_to_one_3056_encoder",
+      "298_to_one_3079"
+    ],
+    "strValue": "298_to_one_3056_encoder"
+  },
+  "ballChain Default": {
+    "name": "ballChain Default",
+    "options": [
+      "4point5mm"
+    ],
+    "strValue": "4point5mm"
+  },
+  "underbust": {
+    "name": "underbust",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 863599
+  },
+  "printerOffset": {
+    "name": "printerOffset",
+    "options": [
+      "1.2",
+      "0"
+    ],
+    "value": 500
+  },
+  "Timing Belt Length": {
+    "name": "Timing Belt Length",
+    "options": [
+      "1000",
+      "3"
+    ],
+    "value": 40000
+  },
+  "roundMotor Default": {
+    "name": "roundMotor Default",
+    "options": [
+      "WPI-gb37y3530-50en"
+    ],
+    "strValue": "WPI-gb37y3530-50en"
+  },
+  "dead shaft radius": {
+    "name": "dead shaft radius",
+    "options": [],
+    "value": 5000
+  },
+  "waist high hip": {
+    "name": "waist high hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 101600
+  },
+  "width between mounting holes": {
+    "name": "width between mounting holes",
+    "options": [
+      "150.0",
+      "10.0"
+    ],
+    "value": 30000
+  },
+  "squareNut Default": {
+    "name": "squareNut Default",
+    "options": [
+      "M3"
+    ],
+    "strValue": "M3"
+  },
+  "vexGear Default": {
+    "name": "vexGear Default",
+    "options": [
+      "12T",
+      "15T",
+      "36T",
+      "60T",
+      "84T",
+      "HS12T",
+      "HS36T",
+      "HS60T",
+      "HS84T"
+    ],
+    "strValue": "12T"
+  },
+  "smaller size": {
+    "name": "smaller size",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 12500
+  },
+  "LewanSoulHorn Default": {
+    "name": "LewanSoulHorn Default",
+    "options": [
+      "fordemo_m3_round",
+      "round",
+      "round_m3_bolts"
+    ],
+    "strValue": "fordemo_m3_round"
+  },
+  "vexShaft Default": {
+    "name": "vexShaft Default",
+    "options": [
+      "2-inch",
+      "3-inch",
+      "4-inch",
+      "6-inch"
+    ],
+    "strValue": "2-inch"
+  },
+  "waist to bottom back": {
+    "name": "waist to bottom back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 171450
+  },
+  "hobbyServo Default": {
+    "options2": [
+      "DHV56mg_sub_Micro",
+      "fs90r",
+      "hv5932mg",
+      "hv6214mg",
+      "mg92b",
+      "standard",
+      "standardMicro",
+      "towerProMG91",
+      "tproSG90",
+      "tproTG90"
+    ],
+    "name": "hobbyServo Default",
+    "options": [
+      "DHV56mg_sub_Micro",
+      "fs90r",
+      "hv5932mg",
+      "hv6214mg",
+      "mg92b",
+      "standard",
+      "standardMicro",
+      "towerProMG91",
+      "tproSG90",
+      "tproTG90"
+    ],
+    "strValue": "towerProMG91"
+  },
+  "vexFlatSheet Default": {
+    "name": "vexFlatSheet Default",
+    "options": [
+      "Aluminum 1x10",
+      "Aluminum 1x15",
+      "Aluminum 1x5",
+      "Aluminum 5x10",
+      "Aluminum 5x15",
+      "Aluminum 5x5",
+      "Steel 10x10",
+      "Steel 1x10",
+      "Steel 1x15",
+      "Steel 1x5",
+      "Steel 5x10",
+      "Steel 5x15",
+      "Steel 5x5"
+    ],
+    "strValue": "Aluminum 1x10"
+  },
+  "IndMotor Default": {
+    "name": "IndMotor Default",
+    "options": [
+      "sn"
+    ],
+    "strValue": "sn"
+  },
+  "Foot Curvature": {
+    "name": "Foot Curvature",
+    "options": [
+      "10000",
+      "103.67255756846318"
+    ],
+    "value": 10000
+  },
+  "vexSpacer Default": {
+    "name": "vexSpacer Default",
+    "options": [
+      "oneEighth",
+      "oneHalf",
+      "oneQuater",
+      "threeEighth",
+      "washer"
+    ],
+    "strValue": "oneEighth"
+  },
+  "timingBelt Default": {
+    "name": "timingBelt Default",
+    "options": [
+      "AT10",
+      "AT20",
+      "AT5",
+      "GT2",
+      "H",
+      "L",
+      "T10",
+      "T20",
+      "T5",
+      "XH",
+      "XL"
+    ],
+    "strValue": "AT10"
+  },
+  "waist to pubic bone": {
+    "name": "waist to pubic bone",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 152399
+  },
+  "dead shaft length": {
+    "name": "dead shaft length",
+    "options": [],
+    "value": 5000
+  },
+  "brushlessMotor Default": {
+    "name": "brushlessMotor Default",
+    "options": [
+      "GB4315",
+      "GBM2804H_100T",
+      "TL2955",
+      "sunnysky_x2204"
+    ],
+    "strValue": "GB4315"
+  },
+  "size": {
+    "name": "size",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 20000
+  },
+  "lockNut Default": {
+    "name": "lockNut Default",
+    "options": [
+      "8#32",
+      "Inch-1_4-20",
+      "M10",
+      "M12",
+      "M14",
+      "M16",
+      "M18",
+      "M20",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M8"
+    ],
+    "strValue": "8#32"
+  },
+  "waist": {
+    "name": "waist",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 762000
+  },
+  "BatteryBox Default": {
+    "name": "BatteryBox Default",
+    "options": [
+      "9vbattery"
+    ],
+    "strValue": "9vbattery"
+  },
+  "number of panels": {
+    "name": "number of panels",
+    "options": [
+      "12",
+      "4"
+    ],
+    "value": 8000
+  },
+  "Bolt Length": {
+    "name": "Bolt Length",
+    "options": [
+      "180",
+      "10"
+    ],
+    "value": 16000
+  },
+  "heatedThreadedInsert Default": {
+    "name": "heatedThreadedInsert Default",
+    "options": [
+      "8#32",
+      "M3",
+      "M3-pressIn",
+      "M5",
+      "M5-pressIn",
+      "M8"
+    ],
+    "strValue": "8#32"
+  },
+  "Standoff Diameter": {
+    "name": "Standoff Diameter",
+    "options": [
+      "140.0",
+      "3.0"
+    ],
+    "value": 6000
+  },
+  "Chanfer betwwen standoffs and baseplate": {
+    "name": "Chanfer betwwen standoffs and baseplate",
+    "options": [
+      "150.0",
+      "0.0"
+    ],
+    "value": 3000
+  },
+  "Cable Cut Out Length": {
+    "name": "Cable Cut Out Length",
+    "options": [
+      "500",
+      "0.01"
+    ],
+    "value": 10000
+  },
+  "Height of standoffs ": {
+    "name": "Height of standoffs ",
+    "options": [
+      "100.0",
+      "0"
+    ],
+    "value": 10000
+  },
+  "nut Default": {
+    "name": "nut Default",
+    "options": [
+      "4_40",
+      "8#32",
+      "Inch-1_4-20",
+      "M1.6",
+      "M10",
+      "M12",
+      "M14",
+      "M16",
+      "M2",
+      "M2.5",
+      "M20",
+      "M24",
+      "M3",
+      "M30",
+      "M36",
+      "M4",
+      "M42",
+      "M5",
+      "M6",
+      "M8"
+    ],
+    "strValue": "4_40"
+  },
+  "smallKatElectronics Default": {
+    "name": "smallKatElectronics Default",
+    "options": [
+      "batteryInterface",
+      "dji-mavic-pro-battery",
+      "motherboard"
+    ],
+    "strValue": "batteryInterface"
+  },
+  "omniWheelRoller Default": {
+    "name": "omniWheelRoller Default",
+    "options": [
+      "4inch13Roller"
+    ],
+    "strValue": "4inch13Roller"
+  },
+  "vexWheels Default": {
+    "name": "vexWheels Default",
+    "options": [
+      "2.75inchSmooth",
+      "2_75InchOmni",
+      "3_25InchOmni",
+      "4InchOmni",
+      "4inchSmooth",
+      "4inchStandard"
+    ],
+    "strValue": "2.75inchSmooth"
+  },
+  "steelPin Default": {
+    "name": "steelPin Default",
+    "options": [
+      "2x10mm"
+    ],
+    "strValue": "2x10mm"
+  },
+  "oRing Default": {
+    "name": "oRing Default",
+    "options": [
+      "2inchOD"
+    ],
+    "strValue": "2inchOD"
+  },
+  "Timing Belt Width": {
+    "name": "Timing Belt Width",
+    "options": [
+      "19",
+      "3"
+    ],
+    "value": 6200
+  },
+  "chamferedScrew Default": {
+    "name": "chamferedScrew Default",
+    "options": [
+      "M3x16"
+    ],
+    "strValue": "M3x16"
+  },
+  "washer Default": {
+    "name": "washer Default",
+    "options": [
+      "M3",
+      "M5"
+    ],
+    "strValue": "M3"
+  },
+  "PhillipsRoundedHeadThreadFormingScrews Default": {
+    "name": "PhillipsRoundedHeadThreadFormingScrews Default",
+    "options": [
+      "M2x8",
+      "M3x6"
+    ],
+    "strValue": "M2x8"
+  },
+  "waist to top back": {
+    "name": "waist to top back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 177799
+  },
+  "encoder Default": {
+    "name": "encoder Default",
+    "options": [
+      "AMT102_V"
+    ],
+    "strValue": "AMT102_V"
+  },
+  "teeNutWithProngs Default": {
+    "name": "teeNutWithProngs Default",
+    "options": [
+      "M8"
+    ],
+    "strValue": "M8"
+  },
+  "vexMotor Default": {
+    "name": "vexMotor Default",
+    "options": [
+      "269",
+      "393",
+      "v5_11w"
+    ],
+    "strValue": "269"
+  },
+  "Diameter of the thread of the screw": {
+    "name": "Diameter of the thread of the screw",
+    "options": [
+      "120.0",
+      "0.5"
+    ],
+    "value": 2800
+  },
+  "LewanSoulMotor Default": {
+    "name": "LewanSoulMotor Default",
+    "options": [
+      "lx_224"
+    ],
+    "strValue": "lx_224"
+  },
+  "VexBattery Default": {
+    "name": "VexBattery Default",
+    "options": [
+      "v5_14wh"
+    ],
+    "strValue": "v5_14wh"
+  },
+  "socket Default": {
+    "name": "socket Default",
+    "options": [
+      "10mm",
+      "10mm_spline",
+      "11_16_in",
+      "11mm",
+      "11mm_spline",
+      "12mm",
+      "12mm_spline",
+      "13mm",
+      "13mm_spline",
+      "14mm",
+      "14mm_spline",
+      "15mm",
+      "15mm_spline",
+      "16mm",
+      "16mm_spline",
+      "17mm",
+      "17mm_spline",
+      "18mm",
+      "18mm_spline",
+      "19mm",
+      "19mm_spline",
+      "1_2_in",
+      "1_4_in",
+      "3_4_in",
+      "3_8_in",
+      "5_16_in",
+      "5_8_in",
+      "6mm",
+      "7_16_in",
+      "7mm",
+      "8mm",
+      "9_16_in",
+      "9_32_in",
+      "9mm"
+    ],
+    "strValue": "10mm"
+  },
+  "hobbyServoHorn Default": {
+    "options2": [
+      "DHV56mg_sub_Micro_1",
+      "DHV56mg_sub_Micro_2",
+      "DHV56mg_sub_Micro_4",
+      "fs90r_1",
+      "hv6214mg_1",
+      "hv6214mg_6",
+      "standard4",
+      "standardMicro1",
+      "tproSG90_1"
+    ],
+    "name": "hobbyServoHorn Default",
+    "options": [
+      "DHV56mg_sub_Micro_1",
+      "DHV56mg_sub_Micro_2",
+      "DHV56mg_sub_Micro_4",
+      "fs90r_1",
+      "hv6214mg_1",
+      "hv6214mg_6",
+      "standard4",
+      "standardMicro1",
+      "tproSG90_1"
+    ],
+    "strValue": "standardMicro1"
+  },
+  "dShaft Default": {
+    "name": "dShaft Default",
+    "options": [
+      "3_16th_inch",
+      "3mm",
+      "5mm",
+      "6mm",
+      "WPI-gb37y3530-50en"
+    ],
+    "strValue": "5mm"
+  },
+  "VexBrain Default": {
+    "name": "VexBrain Default",
+    "options": [
+      "v5"
+    ],
+    "strValue": "v5"
+  },
+  "vexLchannel Default": {
+    "name": "vexLchannel Default",
+    "options": [
+      "2x2x25_Aluminum",
+      "2x2x35_Aluminum",
+      "3x3x25_Aluminum",
+      "Aluminum 10",
+      "Aluminum 15",
+      "Aluminum 35",
+      "Aluminum 5",
+      "Steel 10",
+      "Steel 15",
+      "Steel 35",
+      "Steel 5"
+    ],
+    "strValue": "2x2x25_Aluminum"
+  },
+  "brushlessBoltOnShaft Default": {
+    "name": "brushlessBoltOnShaft Default",
+    "options": [
+      "5mmShaftWithCollar",
+      "6mmShaftWithCollar",
+      "sunnysky_x2204"
+    ],
+    "strValue": "5mmShaftWithCollar"
+  },
+  "vex_Hex_Nut_Retainer Default": {
+    "name": "vex_Hex_Nut_Retainer Default",
+    "options": [
+      "1_Post_Hex_Nut_Retainer",
+      "1_Post_Hex_Nut_Retainer_With_Bearing",
+      "4_Post_Hex_Nut_Retainer",
+      "Flat_Bearing"
+    ],
+    "strValue": "1_Post_Hex_Nut_Retainer"
+  },
   "high hip": {
     "name": "high hip",
     "options": [
@@ -15,63 +648,219 @@
     ],
     "value": 1041399
   },
-  "underbust": {
-    "name": "underbust",
+  "stepperMotor Default": {
+    "name": "stepperMotor Default",
     "options": [
-      "120.0",
+      "GenericNEMA11",
+      "GenericNEMA14",
+      "GenericNEMA17",
+      "Pololu35x26"
+    ],
+    "strValue": "GenericNEMA11"
+  },
+  "linearBallBearing Default": {
+    "name": "linearBallBearing Default",
+    "options": [
+      "LM10UU",
+      "LM16UU",
+      "LM5UU",
+      "LM6UU",
+      "LM8UU",
+      "LME12UU",
+      "LME20UU",
+      "LME8UU"
+    ],
+    "strValue": "LM10UU"
+  },
+  "vexCchannel Default": {
+    "name": "vexCchannel Default",
+    "options": [
+      "Aluminum 2x15",
+      "Aluminum 2x35",
+      "Aluminum 3x15",
+      "Aluminum 3x35",
+      "Aluminum 3x5",
+      "Aluminum 5x15",
+      "Aluminum 5x35",
+      "Aluminum 5x5",
+      "Aluminum_1x2x10",
+      "Aluminum_1x2x25",
+      "Steel 2x15",
+      "Steel 2x35",
+      "Steel 2x5",
+      "Steel 3x15",
+      "Steel 3x35",
+      "Steel 3x5",
+      "Steel 5x15",
+      "Steel 5x35",
+      "Steel 5x5"
+    ],
+    "strValue": "Aluminum 2x15"
+  },
+  "conePointSetScrew Default": {
+    "name": "conePointSetScrew Default",
+    "options": [
+      "M3x8"
+    ],
+    "strValue": "M3x8"
+  },
+  "ballBearing Default": {
+    "name": "ballBearing Default",
+    "options": [
+      "603zz",
+      "604zz",
+      "605zz",
+      "606zz",
+      "607zz",
+      "608zz",
+      "623zz",
+      "624zz",
+      "625zz",
+      "626zz",
+      "627zz",
+      "634zz",
+      "635zz",
+      "673zz",
+      "6810_2RS",
+      "683zz",
+      "684zz",
+      "685zz",
+      "686zz",
+      "687zz",
+      "688zz",
+      "689zz",
+      "6920_2RS",
+      "693zz",
+      "694zz",
+      "695zz",
+      "696zz",
+      "697zz",
+      "698zz",
+      "699zz",
+      "R8-2RS",
+      "R8-60355K505",
+      "Thrust_1andAHalfinch"
+    ],
+    "strValue": "603zz"
+  },
+  "domeHeadScrew Default": {
+    "name": "domeHeadScrew Default",
+    "options": [
+      "Imp8"
+    ],
+    "strValue": "Imp8"
+  },
+  "vexStandoff Default": {
+    "name": "vexStandoff Default",
+    "options": [
+      "0.25 inch",
+      "0.5 inch",
+      "0.75 inch",
+      "1 inch",
+      "1.5 inch",
+      "2 inch",
+      "2.5 inch",
+      "3 inch",
+      "4 inch",
+      "5 inch",
+      "6 inch"
+    ],
+    "strValue": "0.25 inch"
+  },
+  "brushlessMotorShaft Default": {
+    "name": "brushlessMotorShaft Default",
+    "options": [
+      "TL2954",
+      "TL2955"
+    ],
+    "strValue": "TL2954"
+  },
+  "compressionSpring Default": {
+    "name": "compressionSpring Default",
+    "options": [
+      "Compression_12.03kg",
+      "Compression_dummy",
+      "GhostSpring"
+    ],
+    "strValue": "Compression_12.03kg"
+  },
+  "height between mounting holes": {
+    "name": "height between mounting holes",
+    "options": [
+      "150.0",
+      "10.0"
+    ],
+    "value": 30000
+  },
+  "Thickness of baseplate": {
+    "name": "Thickness of baseplate",
+    "options": [
+      "150.0",
       "1.0"
     ],
-    "value": 863599
+    "value": 3000
   },
-  "waist to pubic bone": {
-    "name": "waist to pubic bone",
+  "capScrew Default": {
+    "name": "capScrew Default",
     "options": [
-      "120.0",
-      "1.0"
+      "6#32",
+      "8#32",
+      "Inch-1_4-20",
+      "M1.6",
+      "M10",
+      "M12",
+      "M14",
+      "M16",
+      "M18",
+      "M2",
+      "M2.5",
+      "M20",
+      "M22",
+      "M24",
+      "M27",
+      "M3",
+      "M30",
+      "M36",
+      "M3x16",
+      "M4",
+      "M42",
+      "M5",
+      "M5x100",
+      "M5x12",
+      "M5x25",
+      "M5x45",
+      "M5x75",
+      "M6",
+      "M8"
     ],
-    "value": 152399
+    "strValue": "M3"
   },
-  "dead shaft radius": {
-    "name": "dead shaft radius",
-    "options": [],
-    "value": 5000
-  },
-  "waist high hip": {
-    "name": "waist high hip",
+  "Axle Length": {
+    "name": "Axle Length",
     "options": [
-      "120.0",
-      "1.0"
+      "10",
+      "152.4"
     ],
-    "value": 101600
+    "value": 50800
   },
-  "dead shaft length": {
-    "name": "dead shaft length",
-    "options": [],
-    "value": 5000
-  },
-  "waist to top back": {
-    "name": "waist to top back",
+  "torsionSpring Default": {
+    "name": "torsionSpring Default",
     "options": [
-      "120.0",
-      "1.0"
+      "Torsion-9271K133",
+      "Torsion-9271K136",
+      "Torsion-9271K272",
+      "Torsion-9271K621",
+      "Torsion-dummmy"
     ],
-    "value": 177799
+    "strValue": "Torsion-9271K133"
   },
-  "waist": {
-    "name": "waist",
+  "Cylinder Resolution": {
+    "name": "Cylinder Resolution",
     "options": [
-      "120.0",
-      "1.0"
+      "128.0",
+      "3.0"
     ],
-    "value": 762000
-  },
-  "waist to bottom back": {
-    "name": "waist to bottom back",
-    "options": [
-      "120.0",
-      "1.0"
-    ],
-    "value": 171450
+    "value": 16000
   },
   "number rows or rivets": {
     "name": "number rows or rivets",
@@ -80,13 +869,5 @@
       "2"
     ],
     "value": 2000
-  },
-  "number of panels": {
-    "name": "number of panels",
-    "options": [
-      "12",
-      "4"
-    ],
-    "value": 8000
   }
 }
